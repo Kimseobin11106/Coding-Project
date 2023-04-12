@@ -21,8 +21,8 @@ public class _05_Operator5 {
 		
 		int num = -10;
 		// 삼항 연산자를 num 값이 음수 양수 상관없이 절대값을 계산해서 absNum에 넣으시오.
-		int absNum = (0 <= num) ? num : num * -1; 
-		// num 이 0보다 크거나 같다 == 양수거나 0이다. 그러면 참일때는 바로 출력해주고 거짓이면 음수니까 -1을 곱해줘서 출력하면 절대값으로 계산된다.
+		int absNum = (0 <= num) ? num : -num; 
+		// num 이 0보다 크거나 같다 == 양수거나 0이다. 그러면 참일때는 바로 출력해주고 거짓이면 음수니까 -를 곱해줘서 출력(-num)하면 절대값으로 계산된다.
 		System.out.println(absNum);
 	}
 
