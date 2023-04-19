@@ -24,15 +24,11 @@ public class NewBehaviourScript : MonoBehaviour
         string playername = "나검사"; // 문자형 데이터 "큰 따옴표" 붙이기
         bool isFullLevel = false; // 논리형 데이터 참인가 거짓인가만 들어감
 
-        Debug.Log("검사의 이름은?");
-        Debug.Log(playername);
-        Debug.Log("검사의 레벨은?");
-        Debug.Log(level);
-        Debug.Log("용사의 힘은?");
-        Debug.Log(strength);
-        Debug.Log("용사는 만렙인가?");
-        Debug.Log(isFullLevel);
-
+        Debug.Log("검사의 이름은?" + playername);
+        Debug.Log("검사의 레벨은?" + level);
+        Debug.Log("용사의 힘은?" + strength);
+        Debug.Log("용사는 만렙인가?" + isFullLevel);
+       
         //2. 그룹형 변수
         string[] monsters = { "슬라임" , "사막뱀" , "악마" }; // 그룹형 변수 []중괄호랑 {}대괄호 사용
         int[] monsterLevel = new int[3]; // 정수 그룹형 변수
