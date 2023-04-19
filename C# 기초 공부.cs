@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class C# Subject : MonoBehaviour
+public class C#Subject : MonoBehaviour
 {    
     int health = 30; //전역변수 *함수 참고  
     string title = "전설의";
