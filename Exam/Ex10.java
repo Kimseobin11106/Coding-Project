@@ -1,8 +1,8 @@
-package Exam;
+package Test;
 
 import java.util.Scanner;
 
-public class Ex01 {
+public class Ex10 {
 	// 피보나치 수열 
 	// 입력한 숫자만큼 피보나치 수열 출력
 	// 출력된 수열의 모든 합을 구해서 출력
