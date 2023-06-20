@@ -26,6 +26,15 @@ public class BlackBox {
 		System.out.println("메모리 카드가 삽입되었습니다.");
 		System.out.println("용량은 " + capacity + " GB 입니다.");
 	}
-	
+
+	int getVideoFileCount(int type) {
+		if (type == 1) { // 일반 영상
+			return 9;
+		} else if (type == 2) { // 이벤트 영상
+			return 2;
+		}
+		return 10;
+	}
+		
 
 }
