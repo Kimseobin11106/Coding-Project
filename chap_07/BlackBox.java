@@ -49,6 +49,15 @@ public class BlackBox {
 		}
 		System.out.println("영상은 " + min + "분 단위로 기록됩니다.");
 	}
-		
 
+	// 사용자가 조작하지 않은 기본상태는 모두 활성화되고 5분 간격으로 녹화를 한다.
+	// Overloading 오버로딩
+	void record(int min) {
+		record(true, true, min);
+	}
+	
+	void record() {
+		record(true, true, 5);
+	}
+		
 }
