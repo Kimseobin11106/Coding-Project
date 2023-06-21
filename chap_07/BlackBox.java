@@ -2,7 +2,7 @@ package chap_07;
 
 public class BlackBox {
 	
-	// 클래스의 구성 요소 - 필드
+	// 클래스의 구성 요소 - 필드, 생성자, 메소드
 	String modelName; // 모델명
 	String resolution; // 해상도
 	int price; // 가격
