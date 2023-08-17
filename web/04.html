@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>링크와 이미지 넣기</title>
+</head>
+<body>
+    <!--
+    -링크(link)-
+    문서와 문서 간 연결을 의미하며, 기본적으로 a 태그를 사용한다.
+    사진과 같은 이미지 객체를 삽입할 때는 img 태그로 작성한다. 
+    -->
+    <!--
+    <a> 필수 [href] 인라인 요소 
+    HTML에서 내부나 외부 링크를 생성합니다.
+    href 라는 속성은 대상 경로를 지정하는 속성인데, 필수로 사용해야 한다.
+    그 외 target, title 속성은 선택적으로 사용할 수 있다.
+    -->
+    
+    <!-- target : blank self top | title : 제목 -->
+    <a href="https://www.naver.com" title="네이버 홈페이지">네이버로 이동</a>
+    <a href="https://www.google.com" title="구글 홈페이지">구글로 이동</a> <br>
+    <a href="03.html">리스트</a>
+    <a href="03.html" target="_blank">blank 이용 리스트</a> <!-- blank : 이 속성은 새 탭으로 페이지가 열린다. -->
+    <a href="03.html" target="_self">self 이용 리스트</a> <!-- self : 이 속성은 기본값과 같아서 그 창에서 열린다.-->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a href="#" target="_top">top 이용 리스트</a> <!-- top : 페이지의 최상단으로 올라오게 된다. [#은 임시] -->
+
+    <!--
+    <img> 필수 [src,alt]
+    HTML에서 이미지 객체를 삽입하고 싶을 때 사용한다.
+    src 속성과 alt 속성이 사용된다. src, alt 필수
+    
+    src 속성
+    삽입하려는 이미지의 경로를 입력하는 속성이다.
+    이 때, 기준은 현재 실행중인 HTML 파일의 위치이다.
+    ./ : 현재폴더(생략 가능) ../ : 상위 폴더 
+    -->
+    <img src="./beach1.jpg" alt="해변사진">
+    <img src="beach1.jpg" alt="해변 사진">
+    <img src="images/beach2.jpg" alt="해변사진2">
+    <br>
+    <a href="https://www.google.com">
+        <img src="images/google_logo.png" alt="구글 로고">
+    </a> 
+</body>
+</html>
