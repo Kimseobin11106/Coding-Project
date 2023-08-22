@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>fieldset & legend</title>
+</head>
+<body>
+    <!-- form 태그 안에 사용된 다양한 상호작용 요소도 fieldset 태그를 사용해 그룹지을 수 있다.
+    legend 태그는 fieldset 태그로 그룹지어 놓은 요소의 이름을 붙이는 태그이다. -->
+
+    <form action="#">
+        <fieldset>
+            <legend>기본 정보</legend>
+            <p>
+                <label for="userID">ID</label>
+                <input type="text" name="userID" id="userID">
+            </p>
+            <p>
+                <label for="userPw">PASSWORD</label>
+                <input type="password" name="userPw" id="userPw">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>선택 정보</legend>
+            <p>
+                <label for="age">나이</label>
+                <input type="number" name="age" id="age">
+            </p>
+            <p>
+                <label for="rmd">추천인</label>
+                <input type="text" name="rmd" id="rmd">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
