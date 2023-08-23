@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style> 
+        h1 {
+            font-size : 15px;
+            color : skyblue;
+            background-color : yellow;
+            width : 200px;
+            height : 60px;
+        }
+        span {
+            color : red;
+            background-color : yellow;
+            width : 200px;
+            height : 60px;
+            
+        }
+
+    </style>
+</head>
+
+<br>
+    <!-- <hn> : 제목이나 주제를 나타내는 텍스트를 표현할 때 사용하는 태그 (블록요소) -->
+    <!-- 블록요소 : 웹브라우저의 공간 유무와 상관 없이 줄 바꿈 되는 태그 / 가로길이와 높이 값을 가질 수 있다. -->
+    <h1>Heading level1</h1>
+    <h2>Heading level2</h2>
+    <h3>Heading level3</h3>
+    <h4>Heading level4</h4>
+    <h5>Heading level5</h5>
+    <h6>Heading level6</h6>
+    
+    <!-- <span> : 인라인요소 
+        인라인요소 : 공간이 부족할 때만 줄 바꿈되는 태그 / 가로길이와 높이 값을 가질 수 없다. -->
+    동해물과 백두산이 <span>마르고</span> 닳도록
+
+    <!-- <p> : 본문의 문단을 작성할 때 사용하는 코드
+        HTML에서 제목이나 주제가 아니면 대부분 p 태그를 사용함 -->
+    <p>내용</p>
+    <p>내용2</p>
+
+    <!-- <br>, <br/> : 줄바꿈을 할 때 사용하는 태그 [<p>와 많이 쓰임]  -->
+    <p>
+        안녕하세요?
+        저는 성일정보고등학교 김서빈입니다.
+    </p>
+    <p>
+        안녕하세요? <br> <br/>
+        저는 성일정보고등학교 김서빈입니다.
+    </p>
+
+    <!-- <blockquote> : 출처에서 인용한 문단 단위의 텍스트를 작성할 때 사용함. (시각 장애인용) -->
+    <blockquote cite="https://github.com/Kimseobin11106/Coding-Project/tree/master">
+        <p>
+            No description, website, or topics provided.
+        </p>
+    </blockquote>
+
+    <!-- <q> : 짧은 인용문을 사용할 때 사용하는 태그 (quote) 
+        <q> 를 이용하면 ""가 인용문에 붙게 됨. -->
+    <q cite="출처 URL">짧은 인용문</q>
+    <p>
+        차세대웹기술지원센터의 데이터에 따르면 <q cite="https://www.koreahtml5.kr/main.do">2021년 
+            대한민국에서 가장 점유율이 높은 웹 브라우저는 크롬입니다.</q>
+    </p>
+
+    <!-- ins 태그와 del 태그 -->
+    <!-- ins 태그는 새로 추가된 텍스트임을 나타낼 때 사용하고,
+    del 태그는 기존에 있던 텍스트가 삭제된 텍스트임을 나타낼 때 사용함. -->
+    <p>
+        세일 기간을 맞이하여 온라인 강의 수강권을 할인된 금액 (정가 <del>36,000원</del>) <ins>20,000원</ins>에
+        판매 합니다.
+    </p>
+
+    <!-- sub태그와 sup태그 -->
+    <!-- 아랫 첨자는 sub, 윗 첨자는 sup -->
+    <p>물의 원소기호는 H<sub>2</sub>0</p>
+    <p>4<sup>2</sup> = 16</p>
+    
+</body>
+</html>
