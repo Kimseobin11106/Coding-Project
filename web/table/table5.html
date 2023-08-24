@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        td {
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- col과 colgroup 태그 [테이블에서 가장 위쪽에 사용(capntion 아래)]
+    표에서 열을 그룹화할 때는 col과 colgroup 태그를 사용한다.
+    col 태그는 하나의 열을 그룹화하고, colgroup은 span 속성과 함께 2개 이상의
+    열을 그룹화한다. width 가로 | height 세로-->
+    <table border = 1 style="width: 800px;">
+        <colgroup>
+            <col width="5%">
+            <col width="5%">
+            <col width="5%">
+            <col width="10%">
+            <col width="10%">
+            <col width="20%">
+            <col width="35%">
+            <col width="10%">
+        </colgroup>
+        <tr>
+            <td colspan="3" rowspan="4">
+                <img src="pic.png" alt="pic">
+            </td>
+            <td colspan="5">이 력 서</td>
+        </tr>
+        <tr>
+            <td rowspan="2">성명</td>
+            <td>(한글)</td>
+            <td></td>
+            <td colspan="2">주민등록번호</td>
+        </tr>
+        <tr>
+            <td>(영문)</td>
+            <td></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td>생년월일</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td colspan="3">주소</td>
+            <td colspan="5"></td>
+        </tr>
+        <tr>
+            <td colspan="3">호적관계</td>
+            <td>호주성명</td>
+            <td></td>
+            <td>호적상 주소</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td colspan="3">년 월 일</td>
+            <td colspan="4">학력 및 경력사항</td>
+            <td>비고</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="4"></td>
+            <td></td>
+        </tr>
+        
+    </table>
+
+</body>
+</html>

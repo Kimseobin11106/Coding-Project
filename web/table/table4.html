@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- col과 colgroup 태그 [테이블에서 가장 위쪽에 사용(capntion 아래)]
+    표에서 열을 그룹화할 때는 col과 colgroup 태그를 사용한다.
+    col 태그는 하나의 열을 그룹화하고, colgroup은 span 속성과 함께 2개 이상의
+    열을 그룹화한다. width 가로 | height 세로-->
+    <table border="1">
+        <!-- 첫 번째 열 -->
+        <col style="width:80px">
+        <!-- 두 번째, 세 번째 열 -->
+        <colgroup span="2" style="width:150px"></colgroup>
+        <!-- 네 번째 열 -->
+        <col style="width:100px">
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>상품명</th>
+                <th>수량</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>총 금액</td>
+                <td colspan="3">6,500원</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>콜라</td>
+                <td>1개</td>
+                <td>1,500원</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>사이다</td>
+                <td>2개</td>
+                <td rowspan="2">1,000원</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>탄산수</td>
+                <td>3개</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
