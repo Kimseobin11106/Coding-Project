@@ -47,7 +47,7 @@ public class BankAccount {
 	}
 	
 	boolean depositWithExchangeRate(double amount, double exchangeRate) {
-		int newAmount = (int)amount*(int)exchangeRate;
+		int newAmount = (int)(amount*exchangeRate);
 		return deposit(newAmount);
 		
 	}
