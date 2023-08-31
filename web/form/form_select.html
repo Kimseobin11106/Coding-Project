@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- select 태그를 사용하면 콤보박스를 생성할 수 있다. [시험에 자주 나옴]-->
+    <!-- value는 서버로 전송될 값 / 옵션 사이의 값은 웹페이지에 보여지는 값 -->
+    <select name="city" id="city">
+        <option value="none">== 도시선택 ==</option>
+        <option value="01">서울</option> <!-- option 의 value 는 전송할 값 -->
+        <option value="07">성남</option>
+        <option value="10">수원</option>
+        <option value="25">삼척</option>
+        <option value="50">제주</option>
+    </select>
+
+    <!-- multiple : 셀렉트박스에서 여러값을 선택할 수 있게 해주는 속성이다. 
+    다만, 사용을 하지 않는 것이 좋다. -->
+    <select name="city2" id="city2"> 
+        <optgroup label="서울시">
+            <option value="01-1">강북구</option>
+            <option value="01-3">강남구</option>
+            <option value="01-7">관악구</option>
+            <option value="01-9">중원구</option>
+        </optgroup>
+        <optgroup label="성남시">
+            <option value="07-1">분당구</option>
+            <option value="07-2">중원구</option>
+            <option value="07-5" selected>수정구</option>
+        </optgroup>
+    </select>
+</body>
+</html>
