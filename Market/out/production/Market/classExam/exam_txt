@@ -1,0 +1,19 @@
+인스턴스 변수 - 필드
+MarketGoods 클래스는 아래와 같은 인스턴스 변수들을 포함한다.
+1. String name (상품의 이름)
+2. int retailPrice (상품의 출시 가격)
+3. int discountRate (상품의 할인율)
+모두 private로 설정!
+
+생성자
+두 개의 생성자를 가지고 있다.
+1. 세 개의 파라미터를 받는 생성자
+2. name, retailPrice 등 2개의 파라미터를 받는 생성자
+
+Getter / Setter 메소드
+1. name, retailPrice는 getter 메소드만 만든다. 값을 지정해주는 것은 생성자에서 완료한다.
+2. discountRate는 바뀔 수 있으므로 getter와 setter 모두 만들어준다.
+
+getDiscountPrice() 메소드
+할인가를 리턴하는 메소드 이다.
+예를들어 retailPrice 10000이고, discountRate가 20이면, 8000을 리턴한다.
