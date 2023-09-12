@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>textarea 태그와 select 태그</h1>
+    <form action="test.jsp" method="post">
+        <fieldset>
+            <legend>여러 줄 글상자와 목록상자</legend>
+            <p>
+                답글<br>
+                <textarea name="reply" id="reply" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                과목선택
+                <select name="subject" id="subject">
+                    <option value="html5">HTML5 </option>
+                    <option value="css3">CSS3</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="jQuery">jQuery</option>
+                </select>
+            </p>
+            <p>
+                스터디지역
+                <select name="place" id="place">
+                    <optgroup label="관악구">
+                        <option value="a">봉천동</option>
+                        <option value="b">신림동</option>
+                        <option value="c">남한동</option>
+                    </optgroup>
+                    <optgroup label="동대문구">
+                        <option value="d">전능동</option>
+                        <option value="e">답십리</option>
+                        <option value="f">신설동</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

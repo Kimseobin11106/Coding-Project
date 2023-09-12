@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/1.css">
+    <!-- 스타일을 적용하는 인라인 방식 -->
+    <style>
+        /* 태그선택자 */
+        p { 
+            /* color 폰트색 */
+            color : blue;
+        }
+        /* 아이디 선택자 : 앞에 #을 쓰고 아이디를 입력 */
+        /* tea라는 id값을 갖고 있는 태그를 선택함 */
+        #tea {
+            /* background-color 배경색 */
+            background-color: blueviolet;
+        }
+        /* 클래스 선택자 : 앞에 .을 쓰고 클래스를 입력 */
+        .house {
+            background-color: yellow;
+        }
+        /* 자손 선택자 : 띄어쓰기를 한 경우에는 모든 자손이 선택 됨. */
+        /* ul 밑에 있는 모든 자손을 선택 */
+        ul li {
+            color: skyblue
+        }
+        /* 자식 선택자 : 기호를 사용한 경우 바로 아래 자식이 선택 됨. */
+        /* ui 밑에 가장 먼저 나오는 li를 선택 */
+        ul > li {
+            color: green;
+        }
+        ul.old > li {
+            color: brown;
+        }
+        /* 전체 선택자 */
+        * {
+            /* font-family 글꼴 */
+            font-family: 궁서;
+        }
+        ul > li > p {
+            color: coral;
+            /* font-weight 폰트 굵기 */
+            font-weight: bold;
+        }
+        /* 인접 형제 선택자(결합자) */
+        /* 첫 번째 요소의 바로 뒤에 위치하면서 같은 부모를 공유하는 두번째 요소를 선택 */
+        h1 + p {
+            background-color: hotpink;
+        }
+        h1 + p + p {
+            background-color: aqua;
+        }
+        p[class] { 
+            /* font-size 글씨크기 */
+            font-size: 50px;
+        }
+        /* 다중 선택 : , 로 구분하면 됨*/
+        h1, h2, h3 {
+            /* border 선과 관련된 속성 */
+            border: 1px solid red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>머리가 좋아지는 음식</p>
+    <!-- id 선택자는 전체 웹페이지에서 딱 한 번만 쓰임. -->
+    <p id="tea">건강에 좋은 차</p>
+    <!-- class 선택자는 웹페이지에서 여러 번 사용할 수 있음. -->
+    <p class="house">잠이 잘 오는 집</p>
+    <p class="house">잠이 잘 오는 집2</p>
+    <p id="tea">건강에 좋은 차2</p>
+    
+    <h2>입고 신고 쓰고 착용하는 것들</h2>
+    <ul class="old">
+        <li>옷
+            <ul>
+                <li>속옷</li>
+                <li>잠옷</li>
+                <li>외출복</li>
+            </ul>
+        </li>
+        <li>신발</li>
+        <li>안경</li>
+        <li>장갑</li>
+    </ul>
+
+    <h2>여행</h2>
+    <ul>
+        <li><p>8월의 추천 여행지</p></li>
+        <li>9월의 추천 여행지</li>
+        <li>10월의 추천 여행지</li>
+    </ul>
+
+    <h1>엑스포 안내</h1>
+    <p>책자를 배부하고 있습니다</p>
+    <p>안내데스크를 활요하기 바랍니다.</p>
+
+    <h3>3학년 소프트웨어개발과</h3>
+    <p>13반</p>
+    <p>14반</p>
+    <p class="doje">15반</p>
+</body>
+</html>

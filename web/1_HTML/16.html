@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 1px solid #000;
+        }
+        table {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>표 - 캡션과 열 너비</h1>
+    <h2>데이터 테이블</h2>
+    <table>
+        <caption>태블릿 PC와 스마트폰 판매현황</caption>
+        <colgroup>
+            <col width="20%">
+            <col width="40%">
+            <col width="40%">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>태블릿 PC</th>
+                <th>스마트폰</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>총판매수</td>
+                <td>5만대</td>
+                <td>16만대</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>상반기 판매수</td>
+                <td>2만대</td>
+                <td>5만대</td>
+            </tr>
+            <tr>
+                <td>하반기 판매수</td>
+                <td>3만대</td>
+                <td>11만대</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
