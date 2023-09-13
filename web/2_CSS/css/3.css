@@ -1,0 +1,27 @@
+/* 가상공간 선택자 - html에서 하는 역할을 사용 가능 */
+.box::after { /* div 태그 후 */
+    content: "항목을 선택해주세요.";
+}
+.box::before { /* div 태그 전 */
+    content: "MENU";
+}
+
+p::first-letter { /* 첫번째 철자 */
+    font-size: 300%;
+    color: red;
+}
+p {
+    border-bottom: 1px dashed #000;
+}
+/*  첫번째 first-child 
+    마지막 last-child 
+    n번째 nth-child(n) */
+p:first-child::first-letter {
+    color: blue;
+}
+p:nth-child(2)::first-letter {
+    color: violet;
+}
+p:last-child { 
+    border: none;
+}

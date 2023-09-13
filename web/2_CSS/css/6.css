@@ -1,0 +1,35 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul,li {
+    list-style: none;
+}
+body {
+    font: 12px "돋움", Gulim;
+    width: 300px;
+    margin: 10px;
+}
+
+h1 {
+    float: left;
+    font-size: 200%;
+    background: #c00;
+    padding: 5px;
+    color: #fff;
+}
+p span {
+    float: right;
+    font-size: 250%;
+    /* image도 span태그에 접근하여 테두리를 주는 효과를 보여줄 수 있다. */
+    border: 3px dotted orange;
+}
+p {
+    /* text-align 정렬 | justify 균등 배분 */
+    text-align: justify;
+}

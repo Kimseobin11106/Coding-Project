@@ -1,0 +1,35 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,li {
+    list-style: none;
+}
+body {
+    font: 15px;
+    font-family: Monoton;
+}
+#gnb li {
+    /* display 인라인 요소, 블록 요소로 전환, 인라인과 블록 요소로 전환 등 */
+    display: inline;
+}
+#gnb li a {
+    display: inline-block;
+    background: #c00;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    /* height 와 line-height 의 값을 같은 값을 주면 세로 가운데 정렬이 가능하다. */
+    line-height: 40px;
+    text-decoration: none;
+    /* transition hover와 같은 상호작용의 딜레이 주는 것 등 */
+    transition: all 0.6s;
+}
+#gnb li a:hover {
+    background: #369;
+    text-decoration: underline;
+}

@@ -1,0 +1,21 @@
+ul, li {
+    list-style: none;
+}
+a {
+    color: black;
+    /* text-decoration 텍스트 밑에 밑줄 등 */
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 굴림;
+    background-color: yellow;
+    line-height: 30px;
+}
+
+/* 마우스를 올렸을 때 특정 스타일을 적용하는 방법 */
+a:hover {
+    color: red;
+    text-decoration: underline;
+    font-family: 궁서;
+    font-weight: bold;
+    background-color: pink;
+}

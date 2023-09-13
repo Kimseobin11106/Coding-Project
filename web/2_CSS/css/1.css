@@ -1,0 +1,43 @@
+/* 태그선택자 - 태그이름을적으면 됨 */
+p {
+    color: blue;
+}
+/* ID 선택자 - #아이디명 적으면 됨 */
+#tea {
+    color: red;
+}
+/* 클래스 선택자 - .클래스명 적으면 됨 */
+.house {
+    color: green;
+}
+/* 자손 선택 - 띄어쓰기로 표현 */
+ul li {
+    background-color: skyblue;
+}
+/* 전체 선택자 - * 을 쓰면 됨 */
+* {
+    font-family: 궁서;
+}
+/* 자식 선택 - 자손에서 띄어쓰기 대신 > 를 사용 */
+ul>li>p {
+    font-weight: bold;
+    color: yellow;
+}
+/* 인접 선택 - 옆에 + 을 쓰면 됨*/
+h1+p { /* 첫번째로 인접 */
+    font-family: 굴림;
+    color: pink;
+}
+h1+p+p { /* 두번째로 인접 */
+    font-family: 돋움;
+    color: hotpink;
+}
+/* p 태그에서 클래스가 있는 태그 [] */
+p[class] {
+    background-color: blueviolet;
+    color: #fff;
+}
+/* 다수 태그 - , 다수의 태그를 똑같은 내용으로 할 때 사용 */
+h1,h2,h3 {
+    border-bottom: 1px solid #000;
+}
