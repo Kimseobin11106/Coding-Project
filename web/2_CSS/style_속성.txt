@@ -1,8 +1,0 @@
-style 속성
-
-color 폰트색
-background-color 배경색
-font-family 글꼴
-font-weight 폰트 굵기
-font-size 글씨크기
-border 선과 관련된 속성
