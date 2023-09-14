@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font: 12px;
+    font-family: "굴림";
+    margin: 10px;
+}
+
+#gnb {
+    width: 525px;
+    height: 50px;
+    background-color: #ddf;
+    padding-left: 5px;
+}
+#gnb li {
+    display: inline;
+}
+#gnb li a {
+    float: left;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border-top: 7px solid #77f;
+    margin-left: 5px;
+    background-color: #ccf;
+    color: #666;
+    transition: all 0.6s;
+}
+#gnb li a:hover {
+    background-color: #eef;
+    color: #000;
+}
+#gnb li a span {
+    display: block;
+}
