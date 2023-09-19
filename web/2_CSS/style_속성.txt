@@ -1,0 +1,13 @@
+style 속성
+
+color 폰트색
+background-color 배경색
+font-family 글꼴
+font-weight 폰트 굵기
+font-size 글씨크기
+border 선과 관련된 속성
+letter-spacing 철자 사이의 간격
+text-indent 들여쓰기
+text-transform 텍스트 소문자,대문자 변형
+text-decoration 텍스트 밑줄 등 
+content 텍스트 쓰기

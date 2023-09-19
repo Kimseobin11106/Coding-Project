@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: blueviolet;
+}
+
+ul,li {
+    list-style: none;
+}
+
+body {
+    font-size: 12px;
+    font-family: "돋움";
+    margin: 10px;
+}
+
+#container {
+    float: left;
+    width: 530px;
+    background-color: #fdf;
+}
+
+.menu {
+    width: 130px;
+    float: left;
+    padding: 10px;
+}
+
+.content {
+    width: 350px;
+    float: right;
+    border-left: 1px solid #333;
+    padding: 10px;
+}
+
+#footer { clear : both; }
+address {
+    font-style: none;
+    padding: 10px;
+}

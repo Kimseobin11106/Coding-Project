@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 16px "돋움";
+    margin: 10px;
+    overflow: visible;
+}
+
+#container {
+    width: 200px;
+    height: 100px;
+    border: 1px solid red;
+    
+    /* overflow 글씨가 가로 세로 크기 박스보다 넘쳤을 때 사용 */
+    overflow: inherit;
+    /* 
+    visible : 박스를 넘어가도 데이트를 보여줌.
+    hidden : 박스를 넘어간 부분은 감춤.    
+    scroll : 박스를 넘어가든 넘어가지 않든 스크롤바 생김.
+    auto : 박스를 넘어갈때만 스크롤바 생김.
+    inherit : 부모 요소의 속성값을 상속 받음. (부모 요소인 body에 overflow 값을 받아옴)
+    */
+}

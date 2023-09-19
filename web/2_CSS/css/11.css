@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+body {
+    font: 12px 굴림,Gulim;
+    margin: 10px;
+}
+
+h1 {
+    color:  blueviolet;
+}
+h2 {
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -9999px;
+}
+p {
+    color: #666;
+    width: 150px;
+    padding: 10px;
+    border: 1px solid blueviolet;
+    display: inline-block;
+}

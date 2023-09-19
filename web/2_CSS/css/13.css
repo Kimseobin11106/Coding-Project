@@ -1,0 +1,55 @@
+* {margin: 0; padding: 0;}
+ul,li {list-style: none;}
+a {text-decoration: none; color: #000;}
+
+#header {
+    position: fixed;
+    width: 200px;
+    left: 50px;
+    top: 30px;
+    border: 3px solid red;
+}
+
+#header h1 {
+    width: 250px;
+    font: bold 15px 굴림,Gulim;
+    color: #123456;
+}
+#header #gnb {
+    width: 150px;
+    margin: 10px 0;
+    /*
+    margin: 10px 11px 12px 13px;
+            top  left right bottom
+    margin: 10px 20px;
+            top,bottom / left,right
+    margin: 10px;
+            all
+    */
+}
+#gnb li a {
+    display: block;
+    background-color: #123456;
+    margin: 2px 0;
+    padding: 5px;
+    color: #fff;
+    font: bold 16px Arial;
+    transition: all 0.3s;
+}
+#gnb li a:hover {
+    background-color: #456789;
+}
+#container {
+    width: 300px;
+    height: 1500px;
+    margin-left: 250px;
+}
+#footer {
+    width: 550px;
+}
+#footer address {
+    font-style: normal;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}

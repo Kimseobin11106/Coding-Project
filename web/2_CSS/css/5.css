@@ -1,0 +1,45 @@
+body {
+    font-size: 14px;
+}
+p {
+    width: 550px;
+
+    /* padding 안쪽 여백 */
+    padding: 5px;
+    /* margin 바깥 여백 */
+    margin: 50px;
+}
+.p1 {
+    /* border : 선 크기 / 선 종류 / 선 색깔 */
+    /* solid 실선 */
+    border: 5px solid #abeaeb;
+}
+.p2 {
+    /* dotted 점선 */
+    border: 5px dotted darkcyan;
+}
+.p3 {
+    /* dashed 파선 */
+    border: 5px dashed mediumaquamarine;
+}
+.p4 {
+    /* groove 안쪽 그림자 액자형 */
+    border: 10px groove #ab5abe;
+}
+.p5 {
+    /* ridge 그림자 없는 액자형 */
+    border: 10px ridge #f06c;
+}
+.p6 {
+    /* inset 위쪽 그림자 액자형 */
+    border: 10px inset #0c3;
+}
+.p7 {
+    /* outset 아래쪽 그림자 액자형 */
+    border: 10px outset #c63;
+}
+.p8 {
+    /* none 선 없음 */
+    /* double 채우기 없는 실선 액자형 */
+    border: 10px double #000;
+}
