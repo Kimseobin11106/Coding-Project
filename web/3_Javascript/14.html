@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 프롬프트 이용 지역을 입력 받음
+        (서울, 경기, 강원, 부산)
+        지역번호 02, 031, 033, 051
+
+        프롬프트에 지역을 입력하면, areaNum 라는 변수에 해당되는 지역번호를 저장한다.
+        서울, 경기, 강원, 부산 외 지역을 입력하면,
+        등록되지 않은 지역입니다. 를 출력 */
+
+        // if 문
+        // let myArea = prompt("지역을 입력해주세요.", "서울");
+        // let areaNum = "0";
+        // if (myArea == "서울") {
+        //     areaNum = "02";
+        // } else if (myArea == "경기") {
+        //     areaNum = "031";
+        // } else if (myArea == "강원") {
+        //     areaNum = "033";
+        // } else if (myArea == "부산") {
+        //     areaNum = "051";
+        // } else {
+        //     document.write("등록되지 않은 지역입니다.");
+        // } 
+        
+        // case 문
+
+        let myArea = prompt("지역을 입력해주세요.", "서울");
+        let areaNum;
+        
+        switch(myArea) {
+            case "서울":
+                areaNum = "02";
+                break;
+            case "경기":
+                areaNum = "031";
+                break;
+            case "강원":
+                areaNum = "033";
+                break;
+            case "부산":
+                areaNum = "051";
+                break;
+            default:
+                alert("등록 되지 않은 지역입니다.");
+        }
+
+        document.write(myArea + "의 지역번호는 " + areaNum);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

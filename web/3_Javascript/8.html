@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Number() : int(숫자) 형식으로 형변환
+        let kor = Number(prompt("국어 점수는?", "0"));
+        let eng = Number(prompt("영어 점수는?", "0"));
+        let math = Number(prompt("수학 점수는?", "0"));
+        let avg = (kor+eng+math)/3;
+        let result = avg>=70 && kor>=50 && eng>=50 && math>=50;
+
+        document.write(avg+"<br>");
+        document.write(result+"<br>");
+        document.write((result == true) ? "pass" : "fail");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function plus(num) {
+            if(num % 10 == 9) {
+                return "+";
+            } else {
+                return "0";
+            }
+        }
+
+
+        let myGrade = prompt("나의 프로그래밍 점수는?", "0");
+        if(myGrade == 100) {
+            document.write("A+");
+        } else if (myGrade>=90) {
+            document.write("A0");
+        } else if (myGrade>=80) {
+            document.write("B" + plus(myGrade));
+        } else if (myGrade>=70) {
+            document.write("C" + plus(myGrade));
+        } else if (myGrade>=60) {
+            document.write("D" + plus(myGrade));
+        } else {
+            document.write("F");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
