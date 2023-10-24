@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("<h1>현재 날짜/시간 정보</h1>");
+        let today = new Date();
+        let nowMonth = today.getMonth()+1; // 0 ~ 11 받아오기 때문에 + 1 해줘야 함.
+        let nowDate = today.getDate(); // 현재 일
+        let nowDay = today.getDay(); // 현재 요일 (0: 일요일 ~ 6: 토요일)
+        let nowHours = today.getHours(); // 현재 시간
+        let nowMinutes = today.getMinutes(); // 현재 분
+        let nowSeconds = today.getSeconds(); // 현재 초
+        let nowTime = today.getTime(); // 1970년대부터 1월 1일부터 경과된 시간
+        
+        let nowDayH = null;
+        switch(nowDay) {
+            case 0:
+                nowDayH = "일요일";
+                break;
+            case 1:
+                nowDayH = "월요일";
+                break;
+            case 2:
+                nowDayH = "화요일";
+                break;
+            case 3:
+                nowDayH = "수요일";
+                break;
+            case 4:
+                nowDayH = "목요일";
+                break;
+            case 5:
+                nowDayH = "금요일";
+                break;
+            case 6:
+                nowDayH = "토요일";
+                break;
+        }
+        // 요일
+        document.write(nowDayH + "<br>");
+
+        document.write(nowMonth + "<br>"); 
+        document.write(nowDate + "<br>");
+        document.write(nowDay + "<br>");
+        document.write(nowHours + "<br>");
+        document.write(nowMinutes + "<br>");
+        document.write(nowSeconds + "<br>");
+        document.write(nowTime + "<br>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
