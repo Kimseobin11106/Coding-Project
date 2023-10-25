@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let theFoods = ["짜장면", "냉면", "갈비탕", "돈까스", "삼겹살"];
+        console.log(theFoods);
+
+    //     let theFoodR = new Array();
+    //     for (let i=theFoods.length-1; i>=0; i--) {
+    //         theFoodR[4-i] = theFoods[i];
+    //     }
+    //     console.log(theFoodR);
+
+        // reverse() : 원본 값이 반대로 변경됨
+        theFoods.reverse();
+        console.log(theFoods);
+
+        let theSubway = ["2호선", "9호선", "7호선", "4호선", "3호선"];
+        
+        // sort() : 값 정렬(오름차순)  
+        theSubway.sort();
+        console.log(theSubway);
+
+        // 배열끼리 합치기 (Java에선 불가능)
+        let mountain1 = ["남산", "도봉산", "관악산", "청계산", "북한산"];
+        let mountain2 = ["설악산", "지리산", "한라산", "속리산"];
+        let mountainU = mountain1.concat(mountain2);
+        console.log(mountainU);
+
+        let theName = ["홍길동", "장발장", "임꺽정", "로미오", "줄리엣"];
+        let theNameS = theName.slice(2, 4); // slice() : 첫 숫자부터만 출력하고 마지막 숫자는 포함 안하는 것 주의!!
+        console.log(theNameS);
+
+        let theProduct = ["냉장고", "컴퓨터", "선풍기", "밥솥", "스마트폰"];
+        let joinData = theProduct.join(","); // join() : 문자열로 받는 것, 파라미터 ","는 각각의 데이터 구분기호 ex) 냉장고,컴퓨터
+        console.log(joinData);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

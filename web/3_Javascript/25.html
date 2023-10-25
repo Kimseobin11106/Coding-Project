@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let theSubway = ["2호선", "9호선", "7호선", "4호선", "3호선"];
+        let newLine1 = "1호선";
+        let newLine2 = "분당선";
+        
+        // shift() : 왼쪽으로 밀기 = 0번 index값 즉, 첫번째 값을 버림
+        theSubway.shift();
+        console.log(theSubway);
+
+        // unshift() : 오른쪽으로 밀기 & 파라미터 값을 첫번째 값에 추가
+        theSubway.unshift(newLine1);
+        console.log(theSubway);
+
+        // pop() : index 제일 뒤에 값을 뽑아 오는 것
+        let sub = theSubway.pop();
+        console.log(sub);
+        console.log(theSubway);
+
+        // push() : index 제일 뒤에 값을 넣는 것
+        theSubway.push(newLine2);
+        console.log(theSubway);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

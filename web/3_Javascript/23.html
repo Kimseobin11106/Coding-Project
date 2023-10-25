@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("<h1>Array(배열)</h1>");
+        let names = new Array();
+        names[0] = "홍길동";
+        names[1] = "장발장";
+        names[2] = "임꺽정";
+        names[3] = "로미오";
+        names[4] = "줄리엣";
+        document.write(names[2] + "<br>");
+
+        let days = new Array("일", "월", "화", "수", "목", "금", "토");
+        // document.write(days[0]);
+        let tdate = new Date();
+        let yoil = days[tdate.getDay()];
+        document.write(yoil + "요일<br>");
+
+        
+        let money = [100, 100, 200, 50, 500, 1000];
+        
+        // 가정, 배열에 돈을 계속 추가하거나 삭제할 수 있다.
+        // 토탈금액을 구합시오.
+        let total = 0;
+        for (let i=0; i<money.length; i++) {
+            total += money[i];
+        }
+
+        document.write(total);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

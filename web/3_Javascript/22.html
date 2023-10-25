@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("<h3>문자 치환</h3>");
+        let theText1 = "img2_out.jpg";
+        document.write(theText1 + "<br>");
+        theText1 = theText1.replace("out.jpg","in.jpg");
+        document.write(theText1 + "<br>");
+
+        document.write("<h3>문자 분할 및 추출</h3>");
+        let theText2 = "images/img10.jpg";
+        
+        document.write(theText2 + "<br>");
+        
+        theText2 = theText2.split("/")[1];
+        // "/" 를 기준으로 2개로 분할 됨 images img10.jpg
+        // [0] : images [1] : img10.jpg
+        document.write(theText2 + "<br>");
+        
+        // 파라미터가 두개면 A부터 B까지, 하나면 A(3)부터 출력. 
+        theText2 = theText2.substring(3);
+        document.write(theText2 + "<br>");
+
+        // Int형으로 바꿔주는 것
+        // 10.jpg -> 10
+        // 주의! img10 -> error = 문자열과 숫자가 붙어있으면 error 가 뜬다!
+        theText2 = parseInt(theText2 + "<br>");
+        document.write(theText2 + "<br>");
+
+        document.write("<h3>마지막 문자 추출</h3>");
+        let theText3 = "hello javascript & jQuery";
+        let theText3L = theText3.length;
+        document.write(theText3L + "<br>");
+        let lastIndex = theText3.length - 1;
+        theText3 = theText3.charAt(lastIndex);
+        document.write(theText3 + "<br>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
