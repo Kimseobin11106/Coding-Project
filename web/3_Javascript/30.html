@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let i = 0;
+        // 재귀함수를 이용하여 안녕하세요1 ~ 안녕하세요10까지 출력
+        function theTest() {
+            i++;
+            document.write("안녕하세요" + i + "<br>");
+            if (i != 10) theTest();
+        }
+        theTest();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

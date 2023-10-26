@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let result = "10+20";
+        document.write(result + "<br>");
+        
+        // eval() : 문자로 된 수식을 따로 계산할 필요 없이 한번에 계산 가능
+        let result1 = eval("10+20");
+        document.write(result1 + "<br>");
+
+        let num = 100;
+        document.write("num"+10+"<br>");
+        
+        // 문자열로 된 변수를 eval로 감싸면 원래 변수로 인식
+        document.write(eval("num")+10+"<br>");
+
+        // isNaN() : 숫자가 아닌가? true(숫자 이외 값) : false(숫자 값)
+        // 문자열("num")로 된 숫자도 숫자로 인식
+        let reulst2 = isNaN("010"); // false 
+        document.write(reulst2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
