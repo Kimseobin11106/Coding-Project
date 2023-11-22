@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.8.1.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            // id가 list1인 <li> 요소 중 홀수 인덱스만 선택후 배경색을 노란색으로 만드시오.
+            $("#list1 li:odd").css("background-color", "yellow"); // li:add -> <li> 중 홀수 인덱스를 선택함
+
+            // 짝수 인덱스의 배경색을 회색으로 변경
+            $("#list1 li:even").css("background-color", "gray"); // li:even -> <li> 중 짝수 인덱스를 선택함
+
+            // list1에서 첫 번째 요소만 글자색을 빨간색으로 바꾸기
+            $("#list1 li:first").css("color", "red"); // li:first -> <li> 중 첫 번째 요소를 선택함
+
+            // list1에서 마지막 요소만 글자색을 파란색으로 바꾸기
+            $("#list1 li:last").css("color", "blue"); // li:last -> <li> 중 마지막 요소를 선택함
+
+            // li 요소 중 인덱스 번호가 1인 즉, 두번째 요소 폰트 스타일 이탤릭으로 바꾸기
+            $("#list1 li").eq(1).css("font-style", "italic"); // eq(num) -> num번째의 인덱스 (많이 사용됨)
+            $("#list1 li:eq(2)").css("font-weight", "bold"); // 이와 같이 안에서 사용할 수도 있고 밖에서 사용할 수도 있음
+
+            // li 요소 중 3번째 요소 이전 것들만 (1, 2번째) border를 2px dotted skyblue로 적용하기
+            $("#list1 li:lt(2)").css("border", "2px dotted skyblue"); // li:lt(num) -> <li> 중 num번째 인덱스 이전 것들을 선택함
+
+            // li 요소 중 3번째 요소 이후 것들만 (1, 2번째 제외 모두) border를 2px dotted purple로 적용하기
+            $("#list1 li:gt(2)").css("border", "2px dotted purple"); // li:gt(num) -> <li> 중 num번째 인덱스 이후 것들을 선택함
+            // &lt; -> '<', &gt; -> '>'
+
+            // list2 (아래 있는 것들은 굉장히 많이 사용됨)
+            // 2의 배수인 자식 요소인 <li>만 배경색을 orange로 바꾸기
+            // li:nth-child(num) -> <li> 중 num번째 요소를 선택함 (인덱스와는 다름)
+            // 2n -> 2의 배수
+            $("#list2 li:nth-child(2n)").css("background-color", "orange");
+
+            // "리스트11"이 포함된 요소만 글자색을 빨간색으로 바꾸기
+            $("#list2 li:contains('리스트11')").css("color", "red"); // li:contains(Stirng) -> <li> 중 String이 포함되어 있는 요소를 선택함
+            // 쌍 따옴표 ("") 안에 있기 때문에 '라스트11' 처럼 홀 따옴표 ('')로 묶어줌
+
+            // <span> 태그를 가지고 있는 <li> 요소만 글씨색을 aqua로 바꾸기
+            $("#list2 li:has('span')").css("color", "aqua"); // 가지고 있는 -> has() 사용 || have() 가 아닌 3인칭 단수인 has() 사용
+
+            // class가 theObj인 <li> 요소만 폰트 사이즈를 20px로 바꾸기
+            $("#list2 li").filter('.theObj').css("font-size", "20px"); // filter() 사용
+
+            // <a> 태그를 가지고 있는 <li> 요소만 배경색을 빨간색으로 바꾸기
+            $("#list2 li").find("a").css("background-color", "red"); // find("a") -> <a> 태그를 찾음
+
+            // class 값이 theTitle인 요소를 새로운 요소로 변경하기
+            $(".theTitle").html("<a href='#'>요소 객체 조작</a>"); // .html() -> html 문서의 값을 변경함
+            // <h2 class="theTitle"><a href='#'>요소 객체 조작</a></h2> 로 변경함
+
+            // class 값이 obj1인 요소의 텍스트를 새로운 텍스트로 변경하기
+            $(".obj1").text("리스트_2") // text() -> 텍스트의 값을 변경함
+            // list_2 -> 리스트_2 로 바뀜
+
+            // id가 list3인 요소의 마지막 위치에 새로운 요소(li) 추가하기
+            $("#list3").append("<li>list_6</li>"); // append() -> 요소의 마지막 위치에 추가
+
+            // id가 list3인 요소의 처음 위치에 새로운 요소(li) 추가하기
+            $("#list3").prepend("<li>list_1</li>"); // prepend() -> 요소의 처음 위치에 추가
+
+            // id가 list3인 요소의 5번째 <li> 요소 이전에 새로운 요소(li) 추가하기 -> 4번째
+            $("<li>insertBefore</li>").insertBefore($("#list3 li").eq(4)); // insertBefore -> ~~ 이전에 추가함 || eq(4) -> 4번째 인덱스
+
+            // 이후에 추가하기
+            $("<li>insertAfter</li>").insertAfter($("#list3 li").eq(5)); // insertAfter -> ~~ 이후에 추가함 || eq(5) -> 5번째 인덱스
+
+            // class가 obj1인 요소를 복제하여 id가 list3인 요소 마지막에 추가하기
+            $(".obj1").clone().appendTo("#list3"); // clone() -> 복제 || appendTo() -> 추가할 대상을 고를 수 있음
+
+            // id가 list3인 요소의 하위요소 중 첫번째 요소 삭제
+            $("#list3 li").eq(0).remove(); // remove() -> 요소 삭제
+            // list_1 삭제
+
+            // list3의 하위요소 중 첫번째 요소의 클래스 값을 변경하기
+            $("#list3 li").eq(0).attr("class", "obj2");
+            $(".obj2").css("background", "yellow");
+
+            // list의 하위 요소 중 두번째 요소에 클래스 값 추가
+            $("#list3 li").eq(1).addClass("obj3");
+            $(".obj3").css("color", "red");
+        });
+    </script>
+    <style>
+        /* script에서 만든 요소들도 style과 같은 것에 영향을 받음 -> 가상의 공간이 아님! */
+        /* #list3 li:first-child
+        {
+            background-color: red;
+        } */
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>탐색 선택자 및 html 조작</h1>
+        <h2>탐색 선택자</h2>
+        <ul id="list1">
+            <li>리스트1</li>
+            <li>리스트2</li>
+            <li>리스트3</li>
+            <li>리스트4</li>
+            <li>리스트5</li>
+            <li>리스트6</li>
+            <li>리스트7</li>
+        </ul>
+
+        <ul id="list2">
+            <li>리스트8</li>
+            <li class="theObj">리스트9</li>
+            <li><span>리스트10</span></li>
+            <li>리스트11</li>
+            <li><a href="#">리스트12</a></li>
+            <li>리스트13</li>
+            <li>리스트14</li>
+        </ul>
+
+        <h2 class="theTitle">html 조작</h2>
+        <ul id="list3">
+            <li class="obj1">list_2</li>
+            <li>list_3</li>
+            <li>list_4</li>
+            <li>list_5</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+        .box1 {
+            background-color: red;
+            position: absolute;
+            top: 1000px;
+            left: -500px;
+            transition: all 0.6s;
+        }
+        .box2 {
+            background-color: blue;
+            position: absolute;
+            top: 2000px;
+            right: -1000px;
+            transition: all 0.6s;
+        }
+        .box1.on {
+            left: 500px;
+        }
+        .box2.on {
+            right: 500px;
+        }
+    </style>
+    <script src="js/jquery-1.8.1.min.js"></script>
+    <script>
+        $(function(){
+            $(window).scroll(function(){
+                let sct = $(window).scrollTop();
+                if (sct > 700) {
+                    $(".box1").addClass("on");
+                }
+                if (sct > 1400) {
+                    $(".box2").addClass("on"); 
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- 공통적으로 사용할 클래스와 개별적으로 사용할 클래스를 합쳐서 사용 할 수 있다. -->
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+</body>
+</html>

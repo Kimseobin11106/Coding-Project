@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { margin: 0; padding: 0; }
+        ul, li { list-style: none; }
+
+        body
+        {
+            font: 12px/1.5 "굴림", Gulim;
+            margin: 10px;
+        }
+
+        h2 { margin-top: 20px; }
+    </style>
+    <script src="js/jquery-1.8.1.min.js"></script>
+    <script>
+        $(function()
+        {
+            $("#btn1").click(function()
+            {
+                // hide() = 해당 요소를 숨김
+                // hide(1000) = 1000ms (1sec)에 걸쳐서 실행
+                $(".box1").hide(1000); // 1000ms = 1sec
+            });
+
+            $("#btn2").click(function()
+            {
+                // show() = 해당 요소를 보여줌
+                // show(1000) = hide와 마찬가지로 1000ms (1sec)에 걸쳐서 실행함
+                $(".box1").show(1000);
+            });
+
+            $("#btn3").click(function()
+            {
+                $(".box2").toggle(1000);
+            });
+
+            $("#btn4").click(function()
+            {
+                $(this).parent().next().slideUp(500);
+            });
+
+            $("#btn5").click(function()
+            {
+                $(this).parent().next().slideDown(500);
+            });
+
+            $("#btn6").click(function()
+            {
+                $(this).parent().next().slideToggle(500);
+            });
+
+            $("#btn7").click(function()
+            {
+                $(this).parent().next().fadeIn(1000);
+            });
+
+            $("#btn8").click(function()
+            {
+                $(this).parent().next().fadeOut(1000);
+            });
+
+            $("#btn9").click(function()
+            {
+                $(this).parent().next().fadeToggle(1000);
+            });
+
+            $("#btn10").click(function()
+            {
+                $(".box3").fadeTo("slow", 0.3);
+            });
+
+            $("#btn11").click(function()
+            {
+                $(".box3").fadeTo("fast", 1);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <h1>jQuery Effect</h1>
+        <p>
+            제이쿼리에서는 화면전환, 슬라이드 다운과 업 효과 등 <br/>
+            다양한 효과 메서드를 제공합니다.
+        </p>
+
+        <h2>show/hide 효과</h2>
+        <p><button id="btn1">hide</button> <button id="btn2">show</button></p>
+        <p class="box1">
+            선택 요소를 숨기거나 노출하고 싶을 경우에 사용함. <br/>
+            hide(시간)/show(시간) 시간은 fast, normal, slow 등으로 입력할 수 있으며, 
+            1000분의 1초 단위의 숫자로 표기할 수도 있음.
+        </p>
+
+        <h2>toggle 효과</h2>
+        <p><button id="btn3">toggle</button></p>
+        <p class="box2">
+            선택 요소가 숨겨져 있다면 보이게 하고, <br/>
+            보이고 있다면 숨기는 역할을 함.
+        </p>
+
+        <h2>slideDown/up 효과</h2>
+        <p>
+            <button id="btn4">slideUp</button>
+            <button id="btn5">slideDown</button>
+            <button id="btn6">slideToggle</button>
+        </p>
+        <p>
+            slideUp은 선택 요소를 위로 미끄러지듯 말아 올리면서 숨김. <br/>
+            반면, slideDown은 선택 요소를 아래로 미끄러지듯 말아 내리면서 노출.
+        </p>
+
+        <h2>fadeIn/fadeOut 효과</h2>
+        <p>
+            <button id="btn7">fadeIn</button>
+            <button id="btn8">fadeOut</button>
+            <button id="btn9">fadeToggle</button>
+        </p>
+        <p>
+            fadeOut은 선택 요소를 천천히 사라지게 만듬. <br/>
+            fadeIn은 선택 요소를 천천히 나타나게 함.
+        </p>
+
+        <h2>fadeTo 효과</h2>
+        <p>
+            <button id="btn10">fadeTo(0.3)</button>
+            <button id="btn11">fadeTo(1)</button>
+        </p>
+        <p class="box3">
+            fadeTo는 선택 요소를 원하는 만큼 <br/>
+            보이거나 숨길 수 있다.
+        </p>
+    </div>
+</body>
+</html>

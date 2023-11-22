@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        #box1 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+        }
+    </style>
+    <script src="js/jquery-1.8.1.min.js"></script>
+    <script>
+        $(function(){ /* 3000ms 안에 위에 있는 작업을 수행하라 */
+            $("#box1").animate()({
+                left: "500px",
+                width: "200px",
+                height: "200px",
+                opacity: 0.5
+            }, 3000).animate({
+                left: 0,
+                width: "100px",
+                height: "100px",
+                opacity: 1
+            }, 3000).animate({
+                top: "500px",
+                width: "200px",
+                height: "200px",
+                // background: 
+                opacity: 0.5
+            }, 3000).animate({
+                top: 0,
+                width: "100px",
+                height: "100px",
+                opacity: 1
+            }, 3000);
+        });
+    </script>
+</head>
+<body>
+    <div id="box1">박스1</div>
+</body>
+</html>

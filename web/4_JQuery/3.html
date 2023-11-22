@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { margin: 0; padding: 0; }
+        ul, li { list-style: none; }
+
+        body
+        {
+            font: 12px/1.5 "굴림", Gulim;
+            margin: 10px;
+        }
+
+        h2 { margin-top: 30px; }
+
+        a { color: #333; }
+
+        #textZone { width: 700px; }
+
+        #listWrap
+        {
+            background-color: #cfcfcf;
+            width: 110px;
+            padding: 10px;
+        }
+
+        #list1
+        {
+            /* display: none; -> 해당 요소를 안 보이게 함 */
+            display: none;
+        }
+    </style>
+    <script src="js/jquery-1.8.1.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            // id=btn1 '클릭'했을 때 id=textZone 글자 색상을 파란색으로 변경
+            $("#btn1").click(function()
+            {
+                $("#textZone").css("color", "blue");
+            });
+
+            // id=btn2 '마우스 오버'했을 때 id=textZone 배경 색상을 노란색으로 변경
+            $("#btn2").mouseover(function()
+            {
+                $("#textZone").css("background", "yellow");
+            });
+
+            // focus는 클릭하거나 포커스 (tab 키)를 줄 때 실행됨
+            $("#btn2").focus(function()
+            {
+                $("#textZone").css("font-weight", "bold");
+            });
+
+            // bind = mouseover와 focus를 동시에 사용하고 싶을 때 사용함
+            // 어떤 메서드라도 상관 없음
+            $("#btn3").bind("mouseover focus", function()
+            {
+                $("#textZone").css("color", "green").css("font-weight", "bold");
+            });
+
+            // mouseenter = mouseover
+            $("#listWrap").mouseenter(function()
+            {
+                $("#list1").css("display", "block");
+            });
+
+            // mouseleave = mouse가 해당 요소를 벗어났을 때 실행
+            // mouseleave = mouseout
+            $("#listWrap").mouseleave(function()
+            {
+                $("#list1").css("display", "none");
+            });
+
+            // toggle = 누를 때마다 다른 함수가 실행됨
+            $("#btn4").toggle(function()
+            {
+                // this = 자기 자신
+                // next = 해당 요소 다음 요소
+                $(this).next().css("background", "red");
+            }, function()
+            {
+                $(this).next().css("background", "orange");
+            }, function()
+            {
+                $(this).next().css("background", "yellow");
+            }, function()
+            {
+                $(this).next().css("background", "white");
+            });
+
+            // hover
+            $(".hover").hover(function()
+            {
+                $(this).css("color", "blue");
+            }, function()
+            {
+                $(this).css("color", "red");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <h1>이벤트 연습</h1>
+        <p id="textZone">
+            웹 브라우저에서 버튼을 클릭한다거나 mouse를 움직이거나 하는 모든 행위를 '이벤트'라고 한다.
+            그리고 이벤트 발생 시 함수의 실행문이 수행되도록 이벤트를 지정하는 것을 이벤트 핸들러라고 한다.
+        </p>
+
+        <h2>click 메서드</h2>
+        <p><button id="btn1">click</button></p>
+
+        <h2>mouseover 메서드</h2>
+        <p><button id="btn2">mouseover</button></p>
+
+        <h2>bind 메서드</h2>
+        <p><button id="btn3">bind</button></p>
+
+        <h2>mouseleave 메서드</h2>
+        <div id="listWrap">
+            <h3>관련 사이트</h3>
+            <ul id="list1">
+                <li><a href="#">list1</a></li>
+                <li><a href="#">list2</a></li>
+                <li><a href="#">list3</a></li>
+                <li><a href="#">list4</a></li>
+            </ul>
+        </div>
+
+        <h2>toggle 메서드</h2>
+        <button id="btn4">toggle</button>
+        <p>
+            누를 때마다 실행 함수를 번갈아 가면서 실행합니다. <br>
+            위의 toggle 버튼을 계속 클릭해 보세요!!!
+        </p>
+
+        <h2>hover 메서드</h2>
+        <h3><a href="#" class="hover">hover</a></h3>
+    </div>
+</body>
+</html>
